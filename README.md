@@ -1,7 +1,5 @@
 
-# Project Title
-
-Black-Scholes Option Pricing Calculator
+# Black-Scholes Option Pricing Calculator
 
 
 ## Description
