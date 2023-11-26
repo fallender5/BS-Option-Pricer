@@ -27,7 +27,7 @@ To run "bs_option_pricer_oop.py" execute the following command in terminal:
 python bs_option_pricer_oop.py
 ## Inputs
 
-option_type = Call or Put Option\
+option_type = Call or Put\
 S - Current(spot) price of an underlying asset\
 K - Strike Price\
 r - Risk-Free Interest Rate\
