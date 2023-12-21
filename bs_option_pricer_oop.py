@@ -122,11 +122,11 @@ def get_input():
             K = float(input("Strike price: ").replace(",", "."))
 
             r = str(input("Risk-free interest rate: ").replace(",", "."))
-            r = float(r)
             # If input is in percentage, remove the percentage sign and convert to float
             if "%" in str(r):
                 r = r.replace("%", "")
                 r = float(r) / 100
+            r = float(r)
 
             t = float(input("Time to maturity (in years): ").replace(",", "."))
             # If time to maturity is inputted as days to maturity, convert it to time to maturity in years
@@ -134,11 +134,11 @@ def get_input():
                 t = t / 365
 
             sigma = input("Volatility of returns of an underlying asset: ").replace(",", ".")
-            sigma = float(sigma)
             # If input is in percentage, remove the percentage sign and convert to float
             if "%" in str(sigma):
                 sigma = sigma.replace("%", "")
                 sigma = float(sigma) / 100
+            sigma = float(sigma)
 
             return option_type, S, K, r, t, sigma
         except ValueError as e:
